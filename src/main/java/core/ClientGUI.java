@@ -115,6 +115,7 @@ public class ClientGUI extends JFrame {
 
         statusLabel.setText("Выбрано: " + selectedCount + " из " + 3);
 
+        //чекбоксы проверяем (3 из 4)
         if (selectedCount >= 3) {
             statusLabel.setForeground(Color.RED);
             for (JCheckBox cb : checkBoxes) {

@@ -4,24 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseNordianStew implements Nordian_stew {
-    private int cost;
-    private int mods;
-    private List<String> modsList;
-
-    public BaseNordianStew() {
-        this.cost = 50;
-        this.mods = 0;
-        this.modsList = new ArrayList<>();
-    }
+    private int cost = 50;
+    private int mods = 0;
+    private List<String> modsList = new ArrayList<>();
 
     @Override
     public int return_value() {
         return cost;
     }
+
     @Override
-    public int return_mods(){return mods;}
+    public int return_mods() {
+        return mods;
+    }
+
     @Override
-    public List<String> return_modsList( ){
+    public List<String> return_modsList() {
         return modsList;
     }
 }
